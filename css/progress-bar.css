@@ -1,0 +1,35 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+
+.barras {
+  width:540px;
+}
+.barras p{
+    margin-left: 5px;
+    margin-top: 25px;
+    font-weight: 800;
+    font-family: "Montserrat",sans-serif;
+    font-size: 12px;
+}
+.barra {
+  width:540px; 
+  height:10px; 
+  background:#CCC; 
+  margin:2px;
+}
+.barra-nivel {
+  height:10px; 
+  background:#1216fd;
+  width:1px;
+  -webkit-transition: width 1s ease;
+  -moz-transition: width 1s ease;
+  transition: width 1s ease;
+}
+.valor-nivel {
+  display: flex;
+  justify-content: flex-end;
+  line-height:11px; 
+  color:#fff; 
+  margin-left:10px; 
+  font-family:"Montserrat"; 
+  font-size:11px;
+}

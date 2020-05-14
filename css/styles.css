@@ -1,1 +1,268 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap');
 
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Raleway',sans-serif;
+}
+
+header {
+    position: relative;
+    z-index: 1;
+}
+
+header img {
+    height: 72vh;
+    z-index: -2;
+    position: absolute;
+}
+
+.nav-container-1 {
+    width: 100%;
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-data {
+    display: flex;
+    flex-direction: row;
+    font-size: 0.8rem;
+    font-weight: 700;
+    width: 32%;
+}
+
+.contact-data a {
+    margin-right: 18px;
+}
+
+.social-media {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 28%;
+}
+
+.social-media i {
+    margin: 0 12px;
+}
+
+.company-section {
+    margin-top: 22vh;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+hr {
+    background-color: #2250fc;
+    width: 100px;
+    height: 2px;
+    border: none;
+    margin: 40px 0;
+}
+
+.company-data {
+    display: flex;
+    flex-direction: column;
+    width: 29%;
+    margin: 0 20px;
+    font-size: 1.2rem;
+    line-height: 1.5rem;
+    position: relative;
+}
+
+.company-data h1 {
+    font-size: 2.9rem;
+}
+
+.barras {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    position: relative;
+}
+
+nav a, nav i {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav ul {
+    width: 38%;
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+nav ul li {
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 0.8rem;
+    font-weight: 700;
+    padding: 0 15px;
+}
+
+.title-page {
+    width: 22%;
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.title-page h1 {
+    font-size: 2.5rem;
+    font-weight: 900;
+}
+
+.nav-container-2 {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    height: 80px;
+}
+
+header h1 {
+    font-weight: black 900;
+    color: #ffffff;
+    font-size: 2.1rem;
+}
+
+header h2 {
+    color: #ffffff;
+}
+
+.header-info-wrapper {
+    height: 50vh;
+    display: flex;
+    align-items: center;
+}
+
+.header-info {
+    width: 100%;
+    display: flex;
+    flex-direction: column;   
+    justify-content: center;
+    align-items: center;
+}
+
+.header-info h1 {
+    font-weight: 900;
+    font-size: 3.2rem;
+    padding: 20px 0;
+}
+
+.header-info h2 {
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.btn-info{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.btn-info button {
+    margin: 0 10px;
+}
+
+.btn-info button a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 10px 15px;
+}
+
+.btn-info button {
+    padding: 12px 2px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 900;
+    font-size: 0.8rem;
+}
+
+.btn-info button:focus {
+    outline: none;
+} 
+
+.explore-btn {
+    background: #2250fc;
+}
+
+.purchase-btn {
+    background: none;
+}
+
+.purchase-btn:hover {
+    color: #464646!important
+}
+
+.purchase-btn a {
+    border: 2px solid #ffffff;
+    border-radius: 5px;
+}
+
+.services-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 11vh;
+}
+
+.grid-services-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 58%;
+    height: 500px;
+    grid-gap: 15px;
+    margin: 20px 0;
+}
+
+.services-text-container {
+    align-items: flex-start;
+    width: 58%;
+}
+
+.services-text-container h1 {
+    font-size: 2.9rem;
+}
+
+.services-text-container p {
+    font-size: 1.2rem;
+}
+
+.grid-services-cell {
+
+}
+
+.grid-services-cell i {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin-left: 22px;
+    font-size: 1.2rem;
+    top: 30px;
+}
+
+.grid-services-cell h3, .grid-services-cell p {
+    padding-left: 60px;
+}
+
+.grid-services-cell h3 {
+    margin-bottom: 8px;
+    font-weight: 900;
+}
+
+.grid-services-cell p {
+    font-size: 0.95rem;
+    color: #888888;
+}
