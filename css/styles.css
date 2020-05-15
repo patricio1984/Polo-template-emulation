@@ -219,6 +219,11 @@ header h1 {
     background: #2250fc;
 }
 
+.explore-btn:hover {
+    background: #0333e8;
+    transition: all 0.3s ease;
+}
+
 .purchase-btn {
     background: none;
     padding: 12px 18px;
@@ -338,14 +343,42 @@ header h1 {
 }
 
 .client-section p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     color: #484848;
 }
 
+.client-area-img {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    width: 58%;
+    margin: 1% 21%;
+    height: 29vh;
+    justify-content: center;
+    align-items: center;
+}
 
-/*ACA VA LA PARTE DE ESTILOS DE OUR CLIENTS*/
+.img-cell:hover {
+    background: #f8f8f8;
+    transition: all 0.5s ease;
+}
 
+.img-cell {
+    text-align: center;
+    padding: 4.8vh 0;
+}
 
+.cell-bottom {
+    border-bottom: 1px solid #eee;
+}
+
+.cell-left {
+    border-left: 1px solid #eee;
+}
+
+.img-cell img {
+    height: 47.56px;
+    width: auto;
+}
 
 .blog-wrapper {
     display: flex;
@@ -434,4 +467,109 @@ header h1 {
 
 .grid-blog-text a:hover {
     color: #2250fc;
+    transition: all 0.3s ease;
+}
+
+.grid-blog-text h3:hover {
+    color: #2250fc;
+    transition: all 0.3s ease;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+footer a:hover {
+    color: #2250fc;
+}
+
+footer {
+    background: #f7f9fb;
+}
+
+.institutional-area {
+    display: flex;
+    flex-direction: row;
+    width: 58%;
+    margin: 0 21%;
+    height: 37vh;
+}
+
+.institutional-area h3 {
+    font-weight: 600;
+    color: #484848;
+    font-size: 0.88rem;
+    margin-bottom: 15px;
+}
+
+.institutional-area p {
+    font-size: 0.88rem;
+    color: #777777;
+    margin: 15px 0;
+}
+
+.institutional-main {
+    display: flex;
+    flex-direction: column;
+    width: 42%;
+    padding-right: 40px;
+}
+
+.institutional-main button a {
+    text-decoration: none;
+    color: #ffffff;
+    padding: 12px 18px;
+}
+
+.institutional-main button {
+    padding: 12px 2px;
+    border-radius: 5px;
+    border-style: none;
+    font-weight: 600;
+    font-size: 0.75rem;
+    background: #2250fc;
+    width: 140px;
+    margin-top: 40px;
+}
+
+.institutional-main button:focus {
+    outline: none;
+} 
+
+.institutional-links {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    margin-left: 170px;
+}
+
+.links-item {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+.links-item ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.links-item ul li a {
+    color: #484848;
+    font-size: 0.88rem;
+}
+
+.links-item ul li a:hover {
+    color: #2250fc;
+}
+
+.copyright-area {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.82rem;
+    font-weight: ;
+    color: #484848;
+    background: #eff1f4;
+    height: 10vh;
 }
