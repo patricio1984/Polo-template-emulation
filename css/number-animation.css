@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
-  
   .wrapper { 
       display: flex; 
       flex-direction: row;
@@ -30,6 +29,7 @@
       margin-bottom: 0; 
       text-align: center; 
       font-family: 'Poppins', sans-serif;
+      color: #111111;
     }
 
   .count-text { 
@@ -37,13 +37,14 @@
       font-weight: normal;  
       margin-top: 10px; 
       margin-bottom: 0; 
-      text-align: center; 
+      text-align: center;
+      color: #111111; 
     }
   
   .fa-2x { 
       text-align: center; 
       width: 100%; 
-      color: #000000; 
+      color: #111111; 
     }
 
    .wrapper hr {
