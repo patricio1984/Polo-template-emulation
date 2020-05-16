@@ -20,19 +20,23 @@
   margin:2px;
 }
 .barra-nivel {
-  height:10px; 
-  background:#1216fd;
-  width:1px;
+  height: 10px;
+  background: #1216fd;
+  width: 1px;
   -webkit-transition: width 1s ease;
   -moz-transition: width 1s ease;
   transition: width 1s ease;
+  position: relative;
 }
 .valor-nivel {
-  display: flex;
-  justify-content: flex-end;
-  line-height:11px; 
-  color:#fff; 
-  margin-left:10px; 
-  font-family:"Poppins",sans-serif; 
-  font-size:11px;
+  display: block;
+  line-height: 11px;
+  color: #fff;
+  margin-left: 10px;
+  font-family: "Poppins",sans-serif;
+  font-size: 11px;
+  position: absolute;
+  top: -20px;
+  color: #000;
+  right: 0;
 }
