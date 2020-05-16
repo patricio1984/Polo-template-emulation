@@ -1,5 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
+.col_half { width: 49%; }
+.col_third { width: 32%; }
+.col_fourth { width: 23.5%; }
+.col_fifth { width: 18.4%; }
+.col_sixth { width: 15%; }
+.col_three_fourth { width: 74.5%;}
+.col_twothird{ width: 66%;}
+.col_half,
+.col_third,
+.col_twothird,
+.col_fourth,
+.col_three_fourth,
+.col_fifth{
+	position: relative;
+	display:inline;
+	display: inline-block;
+	float: left;
+	margin-right: 2%;
+	margin-bottom: 20px;
+}
+.end { margin-right: 0 !important; }
+
   .wrapper { 
       display: flex; 
       flex-direction: row;
@@ -11,6 +33,7 @@
       margin: 35px auto; 
       position: relative;
       font-size: 'Poppins',sans-serif;
+      padding: 0 21%;
     }
   
   .counter {
@@ -19,7 +42,8 @@
       justify-content: center;
       align-items: center;  
       padding: 20px 0; 
-      margin: 0 70px;
+      margin: 0 2.5%;d
+      width: 20%
     }
 
   .count-title { 
