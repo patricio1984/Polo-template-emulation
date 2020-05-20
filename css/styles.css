@@ -17,6 +17,7 @@ header img {
     width: 100%;
     z-index: -2;
     position: absolute;
+    object-fit: cover;
 }
 
 .nav-container-1 {
@@ -33,7 +34,7 @@ header img {
     flex-direction: row;
     font-size: 0.8rem;
     font-weight: 500;
-    width: 31%;
+    margin-right: 400px;
 }
 
 .contact-data a {
@@ -44,21 +45,11 @@ header img {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
-    width: 27%;
     padding-right: 15px;
 }
 
 .social-media i {
     margin: 0 10px;
-}
-
-.company-section {
-    margin-top: 33vh;
-    display: flex;
-    flex-direction: row;
-    width: 100%;
-    align-items: flex-end;
-    justify-content: center;
 }
 
 hr {
@@ -70,16 +61,30 @@ hr {
     margin-top: 20px;
 }
 
-.company-data {
+.company-section {
+    margin-top: 33vh;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.barras {
     display: flex;
     flex-direction: column;
-    width: 28%;
-    right: 1%;
-    margin: 0 35px;
+    position: relative;   
+}
+
+.company-data { 
     padding-bottom: 55px;
+    margin-right: 40px;
     font-size: 1.2rem;
     line-height: 1.5rem;
     position: relative;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    width: 550px;
 }
 
 .company-data h1 {
@@ -94,12 +99,9 @@ hr {
     font-size: 1.1rem;
     color: #484848;
 }
-
-.barras {
-    display: flex;
-    flex-direction: column;
-    width: 40%;
-    position: relative;
+/*este es el menú hamburger*/
+.container-button {
+    display: none;
 }
 
 nav a, nav i {
@@ -108,7 +110,6 @@ nav a, nav i {
 }
 
 nav ul {
-    width: 38%;
     display: inline-flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -130,10 +131,15 @@ nav ul li {
     padding: 0 -15px;
 }
 
+.responsive-nav-icons {
+    list-style: none;
+    display: none;
+}
+
 .title-page {
-    width: 20%;
     display: inline-flex;
     flex-direction: row;
+    margin-right: 360px;
 }
 
 .title-page h1 {
@@ -160,7 +166,9 @@ header h1 {
 .header-info-wrapper {
     display: flex;
     align-items: center;
-    margin-top: 120px;
+    justify-content: center;
+    margin-top: 150px;
+
 }
 
 .header-info {
@@ -203,7 +211,7 @@ header h1 {
 }
 
 .btn-info button {
-    padding: 12px 2px;
+    padding: 12px 0;
     border-radius: 5px;
     border-style: none;
     font-weight: 600;
@@ -220,7 +228,7 @@ header h1 {
 
 .explore-btn:hover {
     background: #0333e8;
-    transition: all 0.3s ease;
+    transition: all 0.5s ease;
 }
 
 .purchase-btn {
@@ -228,8 +236,14 @@ header h1 {
     padding: 12px 18px;
 }
 
+.purchase-btn a:hover {
+    color: #464646;
+    transition: all 0.5s ease;
+}
+
 .purchase-btn:hover {
-    color: #464646!important
+    background: #ffffff;
+    transition: all 0.5s ease;
 }
 
 .purchase-btn a {
@@ -242,6 +256,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin: 11vh 0;
 }
 
@@ -251,11 +266,15 @@ header h1 {
     grid-gap: 15px;
     align-items: center;
     justify-content: center;
+    margin-right: 70px;
 }
 
 .services-text-container {
+    display: flex;
+    flex-direction: column;
     align-items: flex-start;
-    width: 58%;
+    width: 850px;
+    margin-right: 280px;
 }
 
 .services-text-container h1 {
@@ -348,8 +367,7 @@ header h1 {
 .client-area-img {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
-    width: 58%;
-    margin: 2% 21%;
+    margin: 30px 400px;
     justify-content: center;
     align-items: center;
 }
@@ -362,13 +380,14 @@ header h1 {
 .img-cell {
     text-align: center;
     padding: 4.1vh 0;
+    width: 230px;
 }
 
-.cell-bottom {
+.envato, .microsoft, .google, .airbrb, .target {
     border-bottom: 1px solid #eee;
 }
 
-.cell-left {
+.microsoft, .google, .airbrb, .target, .timberland, .stripe, .paypal, .amazon {
     border-left: 1px solid #eee;
 }
 
@@ -382,6 +401,7 @@ header h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: 100%;
     margin-top: 10vh;
     padding-top: 10vh;
     padding-bottom: 2vh;
@@ -389,9 +409,8 @@ header h1 {
 }
 
 .blog-section {
-    align-items: flex-start;
-    width: 58%;
     padding-bottom: 2px;
+    margin-right: 780px;  
 }
 
 .blog-section h1 {
@@ -483,14 +502,16 @@ footer a:hover {
 footer {
     background: #f7f9fb;
     padding-top: 30px;
+    width: 100%;
 }
 
 .institutional-area {
     display: flex;
     flex-direction: row;
-    width: 58%;
-    margin: 5% 21%;
-    
+    justify-content: center;
+    margin-right: 605px;
+    margin-top: 80px;
+    margin-bottom: 80px;
 }
 
 .institutional-area h3 {
@@ -509,8 +530,8 @@ footer {
 .institutional-main {
     display: flex;
     flex-direction: column;
-    width: 42%;
-    padding-right: 40px;
+    width: 380px;
+    margin-left: 110px;
 }
 
 .institutional-main button a {
@@ -531,7 +552,7 @@ footer {
     font-size: 0.75rem;
     background: #2250fc;
     width: 140px;
-    margin-top: 40px;
+    margin-top: 25px;
 }
 
 .institutional-main button:focus {
@@ -541,14 +562,15 @@ footer {
 .institutional-links {
     display: flex;
     flex-direction: row;
-    width: 100%;
-    margin-left: 170px;
+    width: 150px;
+    margin-left: 70px;
 }
 
 .links-item {
     display: flex;
     flex-direction: column;
-    width: 100%;
+    width: 150px;
+    margin-right: 100px;
 }
 
 .links-item ul li {
@@ -570,7 +592,6 @@ footer {
     align-items: center;
     justify-content: center;
     font-size: 0.82rem;
-    font-weight: ;
     color: #484848;
     background: #eff1f4;
     padding: 4vh 0;
@@ -583,3 +604,328 @@ footer {
 .copyright-area a:hover {
     color: #2250fc;
 }
+
+@media (max-width:1300px) {
+    .company-data { 
+        width: 450px;
+}
+
+    .grid-services-cell {
+        width: 280px;
+    }
+
+    .services-text-container {
+        margin-left: 210px;   
+    }
+
+    .title-page {
+        margin-right: 150px;
+    }
+
+    .contact-data {
+        margin-right: 190px;
+}
+
+    .img-cell img {
+        height: 35px;
+    }
+
+    .grid-blog-cell {
+        width: 290px;
+    }
+
+    .grid-blog-cell img {
+        height: 192px;
+    }
+    
+    .blog-section {
+        margin-right: 520px;  
+    }
+
+
+    
+    .institutional-links {
+        margin-left: 50px;
+        width: 100px;
+    }
+    
+    .links-item {
+        margin-right: 60px;
+        width: 100px;
+    }
+
+    .institutional-main {
+        width: 350px;
+        margin-left: 200px;
+    }
+}
+
+@media (max-width:1000px) {
+    hr {
+        display: none;
+    }
+
+    .separation-wrapper hr {
+        display: block;
+    }
+    
+    .company-section {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .company-data { 
+        width: 653px;
+}
+
+    .responsive-nav-icons {
+        display: flex;
+        flex-direction: row;
+    }
+
+    nav ul li {
+        display: none;
+    }
+
+    .nav-container-1 {
+        background: #ffffff;
+    }
+
+    .nav-container-1 a, .nav-container-1 i {
+        color: #484848;
+    }
+
+    .services-wrapper {
+        justify-content: center;
+        align-items: center;
+        display: flex;
+    }
+
+    .services-text-container {
+        margin-left: 430px;
+    }
+
+    .grid-services-container {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+    }
+
+    .grid-services-cell {
+        width: 600px;
+    }
+
+    /*este es el menú hamburger*/
+    .container-button {
+     display: flex;
+    
+}
+
+    .title-page {
+        margin: 0 330px;
+    }
+
+    .nav-container-2 {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .nav-container-2 a i {
+        margin-right: 15px;
+    }
+
+    .client-area-img {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    .airbrb, .timberland, .amazon {
+        border-left: none;
+    }
+
+    .lenovo {
+        border-left: 1px solid #eee;
+        border-bottom: 1px solid #eee;
+    }
+ 
+    .amazon {
+        border-right: 1px solid #eee;
+    }
+
+    .timberland, .stripe, .paypal {
+        border-bottom: 1px solid #eee;
+    }
+
+    .institutional-main {
+        margin-left: 300px;
+        width: 300px;
+        
+    }
+    .institutional-area {
+        margin-right: 900px;
+    }
+    .grid-blog-container {
+        grid-template-columns: 1fr 1fr;
+    }    
+}
+
+@media (max-width:950px) {
+    .contact-data {
+        flex-direction: column;
+    }
+    
+    .title-page {
+        margin: 0 255px;
+    }
+
+    .institutional-area {
+        flex-direction: column;
+    }
+    .institutional-links {´
+        flex-direction: column;
+        flex-wrap: wrap;
+    }
+    
+    .links-item {
+        margin-top: 50px;
+    }
+
+    .institutional-main {
+        margin-left: 50px;
+    }
+}
+    
+@media (max-width:800px) {
+    .title-page {
+        margin: 0 200px;
+        }
+}
+
+
+@media (max-width:750px) {
+    .nav-container-1 {
+        flex-direction: column;
+    }
+
+    .social-media {
+        margin-right: 130px;
+    }
+    
+    .contact-data {
+        margin-bottom: 15px;
+    }
+
+    .client-area-img {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .img-cell {
+        border-bottom: 1px solid #eee;
+    }
+
+    .paypal, .amazon {
+        border-bottom: none;
+    }
+
+    .envato, .google, .target, .timberland, .paypal {
+        border-left: none;
+    }
+
+    .amazon, .airbrb {
+        border-right: none;
+        border-left: 1px solid #eee;
+    }
+    .grid-blog-container {
+        grid-template-columns: 1fr;
+    }    
+}
+
+@media (max-width:650px) {
+    
+    .nav-container-1 {
+        padding-left: 20px;
+        width: 100%;
+    }
+
+    .nav-container-1 a {
+        width: 100%;
+    }
+
+    .social-media {
+        padding-left: 20px;
+    }
+
+    .company-data {
+        width: 90%;
+        margin-left: 50px;
+    }
+
+    .company-data h1 {
+        font-size: 2rem;
+    }
+    .company-section {
+        margin-top: 120px;
+    }
+
+    .container-button {
+        right: 120px;
+    }
+
+    .title-page {
+        margin: 0 40px;
+    }
+
+    .title-page h1 {
+        font-size: 2rem;
+    }
+
+    .header-info-wrapper {
+        margin-top: 70px;
+    }
+    .header-info h1 {
+    font-size: 2rem;
+    text-align: center;
+    }
+
+    .header-info h2 {
+        text-align: center;
+    }
+
+    .services-text-container {
+        width: 100%;
+        margin-right: 380px;
+    }
+
+    .services-text-container h1 {
+        font-size: 2rem;
+    }
+
+    .grid-services-cell {
+        width: 100%;
+    }
+
+    .client-section h1 {
+        font-size: 2rem;
+    }
+
+    .client-section p {
+        text-align: center;
+    }
+
+    .client-area-img { 
+        margin: 0 20px;
+        width: 90%;
+}
+    .img-cell {
+        width: 45%;
+    }
+    .blog-section {
+        margin-right: 0;
+    }
+
+    .blog-section h1 {
+        font-size: 2rem;
+    }
+}
+

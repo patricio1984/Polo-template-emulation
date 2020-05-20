@@ -40,3 +40,36 @@
   color: #000;
   right: 0;
 }
+
+@media (max-width: 1300px) {
+  .barras {
+    width: 450px;
+  }
+
+  .barra {
+    width: 450px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .barras {
+    width: 650px;
+    margin-right: 40px;
+  }
+
+  .barra {
+    width: 655px;
+  }
+}
+
+@media (max-width: 650px) {
+  .barras {
+    width: 90%;
+    margin-right: 0;
+    margin-bottom: 120px;
+  }
+
+  .barra {
+    width: 90%;
+  }
+}
