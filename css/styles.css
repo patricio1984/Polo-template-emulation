@@ -127,8 +127,17 @@ nav ul li {
 .nav-icons {
     display: inline-flex;
     flex-direction: row;
-    align-items: center;
-    padding: 0 -15px;
+    align-items: flex-end;
+    padding: 35px -15px;
+}
+
+.nav-icons sup {
+    font-size: 0.6rem;
+    top: -20px;
+}
+
+.nav-icons sup:hover {
+    color: #0333e8;
 }
 
 .responsive-nav-icons {
@@ -642,8 +651,6 @@ footer {
         margin-right: 520px;  
     }
 
-
-    
     .institutional-links {
         margin-left: 50px;
         width: 100px;
