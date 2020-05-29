@@ -78,12 +78,18 @@
        width: 20%;
        margin-top: 5px;
        margin-bottom: 10px;
+       padding: 0;
+   }
+
+   .wrapper i {
+     font-size: 39px;
    }
 
    @media (max-width: 1300px) {
         
         .wrapper {
-          padding: 80px 170px;
+          align-items: center;
+          padding: 25px 0;
         }
    }
 
@@ -91,5 +97,23 @@
     
     .wrapper {
     flex-direction: column;
+    width: 100%;
+    }
+
+   .wrapper hr {
+     display: block;
+   }
+
+    .count-text {
+      width: 100%; 
+    }
+
+    .col_fourth { 
+      width: 35%; 
+    }
+
+    .end {
+      margin-left: 0;
     }
    }
+
