@@ -15,9 +15,18 @@ header {
 header img {
     height: 72vh;
     width: 100%;
-    z-index: -2;
+    z-index: -1;
     position: absolute;
     object-fit: cover;
+    opacity: .6;
+}
+
+#outer-box-overlay, #inner-box-overlay {
+    background-color: rgba(0,0,0,.59);
+    width: 100%;
+    height: 72vh;
+    z-index: -4;
+    position: absolute;
 }
 
 .nav-container-1 {
@@ -26,6 +35,7 @@ header img {
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    z-index: -3;
 }
 
 .contact-data {
@@ -33,12 +43,12 @@ header img {
     flex-direction: row;
     font-size: 0.75rem;
     font-weight: 500;
-    margin-right: 430px;
-    padding: 12px 0;
+    margin-right: 388px;
 }
 
 .contact-data a {
     margin-right: 18px;
+    line-height: 40px;
 }
 
 .social-media {
@@ -199,12 +209,13 @@ nav ul li {
 .title-page {
     display: inline-flex;
     flex-direction: row;
-    margin-right: 360px;
+    margin-right: 315px;
 }
 
 .title-page h1 {
     font-size: 2.5rem;
     font-weight: 800;
+    line-height: 80px;
     letter-spacing: 1px;
 }
 
@@ -214,7 +225,6 @@ nav ul li {
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    padding: 12px 0;
 }
 
 header h1 {
@@ -227,7 +237,7 @@ header h1 {
     display: flex;
     align-items: center;
     justify-content: center;
-    margin-top: 150px;
+    
 }
 
 .header-info {
@@ -237,6 +247,7 @@ header h1 {
     justify-content: center;
     align-items: center;
     text-align: center;
+    padding-top: 120px;
 }
 
 .header-info h1 {
@@ -953,12 +964,25 @@ footer {
 @media (max-width:650px) {
 
     .nav-container-1 {
-        padding-left: 20px;
         width: 100%;
+        padding: 0;
+        margin-bottom: 0;
+        font-size: 13px;
     }
 
     .nav-container-1 a {
         width: 100%;
+    }
+
+    .contact-data {
+        margin-right: 100px;
+        margin-bottom: 0;
+        padding: 0;
+    }
+
+    .contact-data a {
+        line-height: 40px;
+        padding-left: 25px;
     }
 
     .social-media {
@@ -971,7 +995,7 @@ footer {
     }
 
     .company-data h1 {
-        font-size: 2rem;
+        font-size: 2.5rem;
     }
     .company-section {
         margin-top: 170px;
@@ -985,26 +1009,39 @@ footer {
         margin: 0 40px;
     }
 
-    .title-page h1 {
-        font-size: 2rem;
+    .header-info-wrapper {
+        margin-top: 25px;
     }
 
-    .header-info-wrapper {
-        margin-top: 20px;
+    .header-info {
+        display: flex;
+        align-items: center;
+        padding-top: 30px;
     }
+
     .header-info h1 {
-    font-size: 2rem;
+    width: 90%;
+    font-size: 30px;
     text-align: center;
+    padding: 0;
+    margin: 0;
+    margin-bottom: 20px;
+    line-height: 2rem;
     }
 
     .header-info h2 {
         text-align: center;
-        font-size: 1rem;
+        font-size: 1.10rem;
+        line-height: 1.7rem;
     }
     
     header img {
         height: 75vh;
     }
+
+    #outer-box-overlay, #inner-box-overlay {
+        height: 75vh;
+    }    
 
     .services-text-container {
         width: 90%;
@@ -1050,3 +1087,30 @@ footer {
     }
 }
 
+@media (max-width:575px) {
+    .social-media {
+        display: none;
+    }
+}
+
+@media (max-width:360px) {
+    header img {
+        height: 100vh;
+    }
+
+    #outer-box-overlay, #inner-box-overlay {
+        height: 100vh;
+    }    
+
+}
+
+@media (max-width:320px) {
+    header img {
+        height: 120vh;
+    }
+
+    #outer-box-overlay, #inner-box-overlay {
+        height: 120vh;
+    }    
+
+}
