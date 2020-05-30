@@ -768,6 +768,13 @@ footer {
         width: 350px;
         margin-left: 200px;
     }
+
+    .grid-blog-cell button {
+        left: 190px;
+        top: 11px;
+        padding: 2px 15px;
+    }
+
 }
 
 @media (max-width:1000px) {
