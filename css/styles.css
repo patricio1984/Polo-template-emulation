@@ -7,17 +7,37 @@
     font-family: 'Poppins',sans-serif;
 }
 
-header {
+body {
     position: relative;
-    z-index: 1;
 }
 
-#outer-box-overlay, #inner-box-overlay {
-    background: url("../img/18.jpg");
+header {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+}
+
+#outer-box-overlay {
+    background-image: url("../img/18.jpg");
     width: 100%;
     height: 72vh;
     z-index: -4;
+    background-repeat: no-repeat;
+    position: relative;
+    background-size: cover;
+}
+
+#inner-box-overlay {
     position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
+    content: ' ';
+    z-index: 0;
+    background: rgba(0,0,0,.59);
     opacity: .5;
 }
 
@@ -113,7 +133,7 @@ hr {
 }
 
 .company-section {
-    margin-top: 33vh;
+    margin-top: 4.5%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -236,24 +256,27 @@ header h1 {
 .header-info-wrapper {
     display: flex;
     align-items: center;
+    flex-direction: column;
     justify-content: center;
-    
+    z-index: 2;
 }
 
 .header-info {
     width: 100%;
     display: flex;
-    flex-direction: column;   
+    flex-direction: column; 
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-top: 120px;
+    margin: 25vh 0;
+    z-index: 5;
 }
 
 .header-info h1 {
     font-weight: 800;
     font-size: 3.2rem;
     padding: 5px 0;
+    color: #fff;
 }
 
 .header-info h2 {
@@ -269,6 +292,7 @@ header h1 {
     width: 100%;
     justify-content: center;
     margin: 20px 0;
+    z-index: 5;
 }
 
 .btn-info button {
@@ -1114,8 +1138,8 @@ footer {
     header img {
         height: 100vh;
     }
-
-    #outer-box-overlay, #inner-box-overlay {
+    
+   #outer-box-overlay, #inner-box-overlay {
         height: 100vh;
     }    
 
@@ -1129,5 +1153,4 @@ footer {
     #outer-box-overlay, #inner-box-overlay {
         height: 120vh;
     }    
-
 }
