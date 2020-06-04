@@ -32,7 +32,7 @@
       margin: 35px auto; 
       position: relative;
       font-size: 'Poppins',sans-serif;
-      padding: 80px 270px;
+      padding: 80px 320px;
     }
 
   
@@ -89,7 +89,7 @@
         
         .wrapper {
           align-items: center;
-          padding: 25px 0;
+          padding: 25px 200px;
         }
    }
 

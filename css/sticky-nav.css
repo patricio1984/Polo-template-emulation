@@ -11,7 +11,8 @@
     width: 100%;
     background-color: #fff;
     box-shadow: 3px 13px 17px 0px #e6e6e6;
-    z-index: 99; 
+    z-index: 99;
+    transition: all 0.3s ease;
   }
 
   .sticky a, .sticky i, .sticky h1, .container-button {
