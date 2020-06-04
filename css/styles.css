@@ -13,7 +13,7 @@ body {
 
 header {
     position: absolute;
-    z-index: 1;
+    z-index: 99;
     width: 100%;
 }
 
@@ -132,7 +132,7 @@ hr {
 }
 
 .company-section {
-    margin-top: 4.5%;
+    margin-top: 3.5%;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -147,14 +147,14 @@ hr {
 
 .company-data { 
     padding-bottom: 55px;
-    margin-right: 40px;
+    margin-right: 25px;
     font-size: 1.2rem;
     line-height: 1.5rem;
     position: relative;
     display: flex;
     align-items: flex-start;
     flex-direction: column;
-    width: 550px;
+    width: 547px;
 }
 
 .company-data h1 {
@@ -204,11 +204,13 @@ nav ul li {
     flex-direction: column;
 }
 
-.nav-icons {
+.nav-icons ul li {
     display: inline-flex;
     flex-direction: row;
     align-items: flex-end;
-    padding: 35px -15px;
+    justify-content: flex-end;
+    margin: 0;
+    padding: 0 7px;
 }
 
 .nav-icons sup {
@@ -248,7 +250,7 @@ nav ul li {
 
 header h1 {
     font-weight: 900;
-    color: #ffffff;
+    color: #fff;
     font-size: 2.1rem;
 }
 
@@ -257,7 +259,6 @@ header h1 {
     align-items: center;
     flex-direction: column;
     justify-content: center;
-    z-index: 2;
 }
 
 .header-info {
@@ -268,7 +269,7 @@ header h1 {
     align-items: center;
     text-align: center;
     margin: 25vh 0;
-    z-index: 5;
+    z-index: 1;
 }
 
 .header-info h1 {
@@ -279,10 +280,10 @@ header h1 {
 }
 
 .header-info h2 {
-    color: #ffffff;
+    color: #fff;
     font-weight: 400;
     font-size: 1.1rem;
-    letter-spacing: 0;
+    letter-spacing: 0;   
 }
 
 .btn-info{
@@ -290,29 +291,23 @@ header h1 {
     flex-direction: row;
     width: 100%;
     justify-content: center;
-    margin-top: -23vh;
-    z-index: 5;
+    margin-top: -24vh;
+    z-index: 1;
+    padding: 10px 18px;
 }
 
-.btn-info button {
-    margin: 0 10px;
-}
-
-.btn-info button a {
-    text-decoration: none;
-    color: #ffffff;
-    padding: 12px 18px;
-}
-
-.btn-info button {
-    padding: 12px 0;
+.btn-info a {
+    padding: 11px 22px;
     border-radius: 5px;
     border-style: none;
     font-weight: 600;
     font-size: 0.75rem;
+    text-decoration: none; 
+    color: #fff;
+    margin: 0 5px;
 }
 
-.btn-info button:focus {
+.btn-info:focus {
     outline: none;
 } 
 
@@ -327,23 +322,14 @@ header h1 {
 
 .purchase-btn {
     background: none;
-    padding: 12px 18px;
-}
-
-.purchase-btn a:hover {
-    color: #464646;
-    transition: all 0.5s ease;
+    border: 2px solid #fff !important;
+    padding: 9px 18px !important;
 }
 
 .purchase-btn:hover {
-    background: #ffffff;
+    background: #fff;
+    color: #464646;
     transition: all 0.5s ease;
-}
-
-.purchase-btn a {
-    border: 1.5px solid #ffffff;
-    border-radius: 5px;
-    padding: 12px 2px;
 }
 
 .services-wrapper {
@@ -360,7 +346,7 @@ header h1 {
     grid-gap: 15px;
     align-items: center;
     justify-content: center;
-    margin-right: 70px;
+    margin-right: 40px;
 }
 
 .services-text-container {
@@ -368,7 +354,8 @@ header h1 {
     flex-direction: column;
     align-items: flex-start;
     width: 850px;
-    margin-right: 280px;
+    margin-right: 270px;
+    margin-bottom: 30px;
 }
 
 .services-text-container h1 {
@@ -385,18 +372,13 @@ header h1 {
 
 .grid-services-cell {
     width: 355px;
+    position: relative;
 }
 
 .grid-services-cell a {
+    width: 100%;
+    height: 100%;
     color: #333;
-}
-
-.grid-services-cell a i:hover {
-    border-radius: 50%;
-    border: 3px solid black;
-    background: transparent;
-    padding: 15px 10px;
-    margin-right: 300px;
 }
 
 .grid-services-cell i {
@@ -406,9 +388,48 @@ header h1 {
     align-items: flex-start;
     justify-content: center;
     text-align: center;
-    padding-left: 27px;
-    font-size: 1.2rem;
-    top: 40px;
+    padding-left: 20px;
+    font-size: 27px;
+    top: 0;
+    line-height: 44px;
+}
+
+.grid-services-cell .icon {
+    height: 46px;
+    width: 46px;
+    position: absolute;
+}
+
+.grid-services-cell i:after {
+    top: -5px;
+    left: 5px;
+    padding: 4px;
+    box-shadow: 0 0 0 3px #333;
+    -webkit-transition: -webkit-transform .2s,opacity .2s;
+    -webkit-transform: scale(.8);
+    -moz-transition: -moz-transform .2s,opacity .2s;
+    -moz-transform: scale(.8);
+    -ms-transform: scale(.8);
+    -webkit-transition: -webkit-transform .2s,opacity .2s;
+    transition: transform .2s,opacity .2s;
+    -webkit-transform: scale(.8);
+    -ms-transform: scale(.8);
+    transform: scale(.8);
+    opacity: 0;
+    pointer-events: none;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    border-radius: 50%;
+    content: '';
+    box-sizing: content-box;
+}
+
+.grid-services-cell i:hover:after {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+    opacity: 1;
 }
 
 .grid-services-cell h3, .grid-services-cell p {
@@ -543,7 +564,7 @@ header h1 {
     margin-top: 3vh;
     padding-bottom: 20px;
     width: 354px;
-    background: #ffffff;
+    background: #fff;
     border: 1px solid #f2f2f2;
 }
 
@@ -555,18 +576,16 @@ header h1 {
     z-index: -1;
 }
 
-.grid-blog-cell button {
+.image-button-container a {
     position: absolute;
     background: #2250fc;
+    color: #fff;
     border: none;
-    left: 258px;
+    left: 255px;
     top: 3%;
     border-radius: 25px;
     padding: 4px 17px;
-}
-
-.grid-blog-cell button a {
-    color: #ffffff;
+    font-size: 0.82rem;
 }
 
 .grid-blog-cell h3 {
@@ -665,28 +684,25 @@ footer {
     margin-left: 110px;
 }
 
-.institutional-main button a {
+.institutional-main a {
     text-decoration: none;
-    color: #ffffff;
-    padding: 12px 18px;
-}
-
-.institutional-main button:hover {
-    background: #0333e8;
-}
-
-.institutional-main button {
-    padding: 12px 2px;
+    color: #fff;
+    padding: 11px 18px;
+    background: #2250fc;
     border-radius: 5px;
     border-style: none;
     font-weight: 600;
     font-size: 0.75rem;
-    background: #2250fc;
     width: 140px;
     margin-top: 25px;
 }
 
-.institutional-main button:focus {
+.institutional-main a:hover {
+    background: #0333e8;
+    color: #fff;
+}
+
+.institutional-main a:focus {
     outline: none;
 } 
 
@@ -792,7 +808,7 @@ footer {
         margin-left: 200px;
     }
 
-    .grid-blog-cell button {
+    .grid-blog-cell a {
         left: 190px;
         top: 11px;
         padding: 2px 15px;
@@ -821,6 +837,10 @@ footer {
     .responsive-nav-icons {
         display: flex;
         flex-direction: row;
+    }
+
+    .nav-icons-big-screen {
+        display: none;
     }
 
     nav ul li {
@@ -861,7 +881,7 @@ footer {
 }
 
     .title-page {
-        margin: 0 330px;
+        margin: 0 310px;
     }
 
     .nav-container-2 {
@@ -1004,6 +1024,10 @@ footer {
         width: 100%;
     }
 
+    .company-section {
+        margin-top: 7%;
+    }
+
     .contact-data {
         margin-right: 100px;
         margin-bottom: 0;
@@ -1022,15 +1046,14 @@ footer {
     .company-data {
         width: 90%;
         margin-left: 50px;
+        line-height: 30px;
+        padding-bottom: 0;
     }
 
     .company-data h1 {
         font-size: 2.5rem;
     }
-    .company-section {
-        margin-top: 170px;
-    }
-
+   
     .container-button {
         right: 120px;
     }
@@ -1119,7 +1142,7 @@ footer {
         padding: 30px 0px;
     }
 
-    .copyright-area p {
+    .copyright-area h4 {
         text-align: center;
         line-height: 32px;
         margin: 0 20px;
