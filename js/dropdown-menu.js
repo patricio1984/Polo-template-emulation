@@ -1,10 +1,7 @@
-$(document).ready(function () {
-    $(".dropdown-list").hover(
-      function () {
-        $(this).addClass("dropdown-menu");
-      },
-      function () {
-        $(this).removeClass("dropdown-menu");
-      }
-    );
+$(document).ready(function(){
+
+  $("ul").hover(function(){
+    $(this).find(".dropdown-list").toggleClass("dropdown-menu");
   });
+  
+});
