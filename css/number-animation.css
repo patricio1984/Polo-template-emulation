@@ -89,7 +89,7 @@
         
         .wrapper {
           align-items: center;
-          padding: 25px 200px;
+          padding: 25px 0;
         }
    }
 
@@ -98,15 +98,13 @@
     .wrapper {
     flex-direction: column;
     width: 100%;
+    padding: 0 0;
     }
 
    .wrapper hr {
      display: block;
+     width: 38px;
    }
-
-    .count-text {
-      width: 100%; 
-    }
 
     .col_fourth { 
       width: 35%; 
