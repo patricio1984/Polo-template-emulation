@@ -1,6 +1,6 @@
 $(document).ready(function(){
 
-  $("ul").hover(function(){
+  $(".menu-item").hover(function(){
     $(this).find(".dropdown-list").toggleClass("dropdown-menu");
   });
   
