@@ -15,8 +15,30 @@
     transition: all 0.3s ease;
   }
 
-  .sticky a, .sticky i, .sticky h1, .container-button {
+  .sticky a, .sticky i, .sticky h1 {
     color: #000000;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: .6px;
+  }
+
+  .sticky h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+    line-height: 80px;
+    letter-spacing: 1px;
+  }
+
+  .sticky a:hover {
+    color:#2250fc;
+  }
+
+  .hamburger:focus {
+    outline: none;
+  }
+
+  .hamburger:active {
+    background: none;
   }
   
   /* Add some top padding to the page content to prevent sudden quick movement (as the header gets a new position at the top of the page (position:fixed and top:0) */
