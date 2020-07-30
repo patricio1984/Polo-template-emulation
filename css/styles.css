@@ -212,6 +212,7 @@ nav ul li {
     box-shadow: 0 14px 20px rgba(0,0,0,.1);
     margin-top: -0.3rem;
     transition: all .3s ease;
+    transform: translateX(-15px);
 }
 
 .nav-icons-big-screen .menu-item .dropdown-menu {
@@ -223,10 +224,36 @@ nav ul li {
     flex-direction: column;
 }
 
+.menu-item .dropdown-list .dropdown-menu-content li {
+    line-height: 35px;
+    font-weight: 500;
+    color: #444;
+}
+
+.menu-item .dropdown-list .dropdown-menu-content span {
+    background: #dc3545;
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 8px;
+    padding: 2px 4px;
+    line-height: 9px;
+    margin: -2px 4px;
+    font-weight: 600;
+    border-radius: .25rem;
+}
+
+.menu-item .dropdown-list .dropdown-menu-content .blue-span {
+    background: #2250fc;
+}
+
 .header-nav-responsive .menu-item .element-list {
     flex-direction: row;
-    width: 58%;
-    left: 397px;
+    position: absolute;
+    margin-left: -33.7%;
+}
+
+.header-nav-responsive .menu-item .element-list .dropdown-menu-content {
+    padding-right: 80px;
 }
 
 .menu-item a:hover, .menu-item a:active {
@@ -1223,7 +1250,24 @@ footer {
     
    #outer-box-overlay, #inner-box-overlay {
         height: 100vh;
-    }    
+    }
+    
+    div.institutional-main {
+        margin: 0;
+        padding-left: 20px;
+    }
+
+    div.company-data {
+        margin: 0;
+    }
+
+    div.blog-section {
+        margin: 0;
+    }
+
+    div#inner-box-overlay {
+        width: 100%;
+    }
 
 }
 
